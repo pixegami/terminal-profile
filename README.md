@@ -1,5 +1,7 @@
 # Pixegami Terminal Profile
 
+![terminal](./terminal_screenshot.png)
+
 This is my profile for UNIX (MacOS/Linux) terminals. For Ubuntu, I just use the default terminal
 app. For MacOS, I use [iTerm2](https://iterm2.com/).
 
@@ -86,7 +88,8 @@ How to display terminal information (I use [Neofetch](https://github.com/dylanar
 sudo apt-get install neofetch
 
 # Display the profile
-neofetch
+# I override the colors because the default red is kinda ugly in this theme.
+neofetch --ascii_colors 6 7 --colors 2 2 2 2
 ```
 
 ## Sources
