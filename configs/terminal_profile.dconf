@@ -1,0 +1,16 @@
+[/]
+background-color='rgb(12,28,37)'
+background-transparency-percent=3
+bold-color='#bdbdc3c3c7c7'
+bold-color-same-as-fg=true
+custom-command=''
+font='Roboto Mono for Powerline 14'
+foreground-color='rgb(134,255,175)'
+login-shell=false
+palette=['rgb(21,37,53)', 'rgb(255,60,60)', 'rgb(73,255,109)', 'rgb(255,188,81)', 'rgb(61,182,249)', 'rgb(142,68,173)', 'rgb(22,160,133)', 'rgb(189,195,199)', 'rgb(38,56,75)', 'rgb(255,60,76)', 'rgb(147,255,145)', 'rgb(255,208,87)', 'rgb(91,215,255)', 'rgb(155,89,182)', 'rgb(32,92,87)', 'rgb(255,255,255)']
+use-custom-command=false
+use-system-font=false
+use-theme-colors=false
+use-theme-transparency=false
+use-transparent-background=false
+visible-name='Pixegami'
