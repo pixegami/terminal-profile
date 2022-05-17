@@ -1,5 +1,5 @@
 # Fail on any command.
-set -euxo pipefail
+set -eux pipefail
 
 # Install Powerline for VIM.
 sudo apt install -y python3-pip

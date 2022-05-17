@@ -9,6 +9,8 @@ app. For MacOS, I use [iTerm2](https://iterm2.com/).
 > will be different. You'll just have to open the `.sh` files and figure out how to adapt it to MacOS
 > until I can prepare MacOS commands.
 
+These commands were last tested on May 2022 on Ubuntu 20.
+
 # Prerequisites
 
 For the scripts to work, I think these are the bare minimum requirements.
@@ -48,7 +50,12 @@ you can run the helper script (and may need to restart after).
 ./install_terminal.sh
 ```
 
-This script will also install two plugins that I like to use: auto-complete and color highlighting.
+After this, the terminal should look a bit different, but we need to do the next step to have the
+entire theme.
+
+### Profile (plugins, theme, font and color)
+
+This script will first install two plugins that I like to use: auto-complete and color highlighting.
 
 ```bash
 # You don't need to execute this - it's part of the script already.
@@ -56,22 +63,20 @@ This script will also install two plugins that I like to use: auto-complete and 
 (cd ~/.oh-my-zsh/custom/plugins && git clone https://github.com/zsh-users/zsh-autosuggestions)
 ```
 
-And finally it will also copy over the `.zshrc` and `pixegami-agnoster.zsh-theme` files for the
+It will also copy over the `.zshrc` and `pixegami-agnoster.zsh-theme` files for the
 terminal to use (which will wire up the plugins and the theme).
-
-If it looks funky after this command, then you might need to wait until the theme is updated with a
-Powerline font (the next step), and may need to also restart your machine.
-
-### Profile (font and color)
 
 The last command is to create a terminal profile that will set the colors and also set the font
 to be the Powerline one we installed earlier (required for the theme to display correctly).
 
 ```bash
-./install_profile_theme.sh
+./install_profile.sh
 ```
 
-You can also change the font to any of the other [Powerline Patched Fonts](https://github.com/powerline/fonts) too if you don't like RobotoMono.
+> You can also change the font to any of the other [Powerline Patched Fonts](https://github.com/powerline/fonts) too if you don't like RobotoMono.
+
+If it looks funky after this command, then you might need to wait until the theme is updated with a
+Powerline font (the next step), and may need to also restart your machine.
 
 
 ## Notes
