@@ -97,6 +97,14 @@ sudo apt-get install neofetch
 neofetch --ascii_colors 6 7 --colors 2 2 2 2
 ```
 
+## How do I reset the changes back to the old terminal?
+
+There's two main modifications being done to the terminal. The terminal theme, and the shell itself.
+
+For the theme, here's a thread I found on the internet on how to reset it to the default: https://askubuntu.com/questions/14487/how-to-reset-the-terminal-properties-and-preferences
+
+For the terminal shell itself, we actually installed a new terminal (zsh) alongside the default bash. Bash itself wasn't removed, but we just set the default shell to `zsh`. Here is a thread on how to uninstall zsh and default back to bash: https://askubuntu.com/questions/958120/remove-zsh-from-ubuntu-16-04
+
 ## Sources
 
 Here are some of the main resources I used as part of this terminal setup.
