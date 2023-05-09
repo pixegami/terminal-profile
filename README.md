@@ -2,20 +2,22 @@
 
 ![terminal](./terminal_screenshot.png)
 
-This is my profile for UNIX (MacOS/Linux) terminals. For Ubuntu, I just use the default terminal
+This is my profile for UNIX (MacOS/Linux) terminals. For Ubuntu and Arch, I just use the default terminal
 app. For MacOS, I use [iTerm2](https://iterm2.com/).
 
 > In the MacOS case, I have successfully installed this theme once before, but most of the terminal commands
 > will be different. You'll just have to open the `.sh` files and figure out how to adapt it to MacOS
 > until I can prepare MacOS commands.
 
-These commands were last tested on May 2022 on Ubuntu 20.
+These commands were last tested on May 2023 Ubuntu 23 and, May 2023 on Arch.
 
 # Prerequisites
 
 For the scripts to work, I think these are the bare minimum requirements.
 
+#### Ubuntu:
 ```bash
+
 # Update your software repositories.
 sudo apt-get update
 sudo apt-get upgrade
@@ -25,6 +27,19 @@ sudo apt-get install -y git
 
 # Install Vim.
 sudo apt-get install -y vim
+
+```
+
+#### Arch:
+```bash
+# Update your software repositories with pacman.
+sudo pacman -Syu
+
+# Install Git.
+sudo pacman -S git
+
+# Install Vim.
+sudo pacman -S vim
 ```
 
 # Installation
@@ -89,8 +104,18 @@ dconf dump /org/gnome/terminal/legacy/profiles:/ > gnome-terminal-profiles.dconf
 
 How to display terminal information (I use [Neofetch](https://github.com/dylanaraps/neofetch)).
 
+#### Ubuntu:
 ```bash
 sudo apt-get install neofetch
+
+# Display the profile
+# I override the colors because the default red is kinda ugly in this theme.
+neofetch --ascii_colors 6 7 --colors 2 2 2 2
+```
+
+#### Arch:
+```bash
+sudo pacman -S neofetch
 
 # Display the profile
 # I override the colors because the default red is kinda ugly in this theme.
