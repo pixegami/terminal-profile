@@ -94,3 +94,12 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# Add virtual environment display to the prompt
+# this will add display when user activate their virtual environment
+# it help people know which env they are in
+autoload -U add-zsh-hook
+venv_info() {
+    [ -n "$VIRTUAL_ENV" ] && echo "(Virtual Environment: $(basename $VIRTUAL_ENV))"
+}
+add-zsh-hook precmd venv_info
