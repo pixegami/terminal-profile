@@ -3,6 +3,7 @@ set -eux pipefail
 
 # Install Powerline for VIM.
 sudo apt install -y python3-pip
+sudo apt install -y python3-venv
 python3 -m venv ~/.powerline-venv
 source ~/.powerline-venv/bin/activate
 pip install powerline-status
